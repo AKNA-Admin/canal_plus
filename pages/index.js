@@ -92,11 +92,11 @@ export default function FormulaireVente() {
 
   return (
     <div style={{ padding: '30px', maxWidth: '500px', margin: '40px auto', fontFamily: 'Segoe UI, sans-serif', boxShadow: '0 4px 15px rgba(0,0,0,0.1)', borderRadius: '8px', backgroundColor: '#fff' }}>
-    <div style={{ textAlign: 'center', marginBottom: '15px' }}>
+    <div style={{ textAlign: 'center', marginBottom: '5px' }}>
   <img 
     src="https://res.cloudinary.com/zpy0qbjp/image/upload/v1785704386/Picture1_ekbv8d.png"
     alt="Logo Canal+ PDV" 
-    style={{ maxWidth: '12Opx', height: 'auto', display: 'block', margin: '0 auto' }} 
+    style={{ maxWidth: '40px', height: 'auto', display: 'block', margin: '0 auto' }} 
    />
    </div>
       
