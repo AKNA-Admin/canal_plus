@@ -92,7 +92,13 @@ export default function FormulaireVente() {
 
   return (
     <div style={{ padding: '30px', maxWidth: '500px', margin: '40px auto', fontFamily: 'Segoe UI, sans-serif', boxShadow: '0 4px 15px rgba(0,0,0,0.1)', borderRadius: '8px', backgroundColor: '#fff' }}>
-      <h2 style={{ textAlign: 'center', color: '#333', marginBottom: '25px' }}>Nouveau Contrat Canal+ CI</h2>
+    <div style={{ textAlign: 'center', marginBottom: '20px' }}>
+  <img 
+    src="https://res.cloudinary.com/zpy0qbjp/image/upload/v1785704386/Picture1_ekbv8d.png"
+    alt="Logo Canal+ PDV" 
+    style={{ maxWidth: '100%', height: 'auto', borderRadius: '4px' }} 
+   />
+   </div>
       
       <form onSubmit={handleSubmit}>
         <div style={{ marginBottom: '15px' }}>
