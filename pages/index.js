@@ -91,18 +91,18 @@ export default function FormulaireVente() {
   };
 
   return (
-    <div style={{ padding: '30px', maxWidth: '500px', margin: '40px auto', fontFamily: 'Segoe UI, sans-serif', boxShadow: '0 4px 15px rgba(0,0,0,0.1)', borderRadius: '8px', backgroundColor: '#fff' }}>
+    <div style={{ padding: '30px', maxWidth: '350px', margin: '40px auto', fontFamily: 'Segoe UI, sans-serif', boxShadow: '0 4px 15px rgba(0,0,0,0.1)', borderRadius: '8px', backgroundColor: '#fff' }}>
     <div style={{ textAlign: 'center', marginBottom: '20px' }}>
       <img 
         src="https://res.cloudinary.com/zpy0qbjp/image/upload/v1785704386/Picture1_ekbv8d.png"
         alt="Logo Canal+ PDV" 
-        style={{ maxWidth: '50%', height: 'auto', display: 'block', margin: '0 auto' }} 
+        style={{ maxWidth: '100%', height: '20px auto', display: 'block', margin: '0 auto' }} 
    />
    </div>
       
       <form onSubmit={handleSubmit}>
         <div style={{ marginBottom: '15px' }}>
-          <label style={{ fontWeight: '600' }}>Type d'opération :</label>
+          <label style={{ fontWeight: '350' }}>Type d'opération :</label>
           <select value={typeVente} onChange={(e) => setTypeVente(e.target.value)} style={{ width: '100%', padding: '10px', marginTop: '5px', borderRadius: '4px', border: '1px solid #ccc' }}>
             <option value="Reabonnement">Réabonnement</option>
             <option value="Kit">Vente de Kit (Nouveau décodeur)</option>
@@ -110,7 +110,7 @@ export default function FormulaireVente() {
         </div>
 
         <div style={{ marginBottom: '15px' }}>
-          <label style={{ fontWeight: '600' }}>Formule Canal+ :</label>
+          <label style={{ fontWeight: '350' }}>Formule Canal+ :</label>
           <select value={formule} onChange={(e) => setFormule(e.target.value)} style={{ width: '100%', padding: '10px', marginTop: '5px', borderRadius: '4px', border: '1px solid #ccc' }}>
             <option value="Access">Access (5 000 F)</option>
             <option value="Evasion">Évasion (10 000 F)</option>
@@ -120,8 +120,8 @@ export default function FormulaireVente() {
         </div>
 
         <div style={{ marginBottom: '15px' }}>
-          <label style={{ fontWeight: '600' }}>N° de Décodeur (14 chiffres) :</label>
-          <input type="text" maxLength="14" value={numDecodeur} onChange={(e) => setNumDecodeur(e.target.value)} required style={{ width: '90%', padding: '10px', marginTop: '5px', borderRadius: '4px', border: '1px solid #ccc' }} />
+          <label style={{ fontWeight: '350' }}>N° de Décodeur (14 chiffres) :</label>
+          <input type="text" maxLength="14" value={numDecodeur} onChange={(e) => setNumDecodeur(e.target.value)} required style={{ width: '100%', padding: '10px', marginTop: '5px auto', borderRadius: '4px', border: '1px solid #ccc' }} />
         </div>
 
         {typeVente === 'Kit' && (
@@ -160,7 +160,7 @@ export default function FormulaireVente() {
         </button>
       </form>
 
-      {message && <p style={{ marginTop: '20px', padding: '10px', borderRadius: '4px', backgroundColor: '#f8f9fa', textAlign: 'center', fontWeight: '600' }}>{message}</p>}
+      {message && <p style={{ marginTop: '20px', padding: '10px', borderRadius: '4px', backgroundColor: '#f8f9fa', textAlign: 'center', fontWeight: '350' }}>{message}</p>}
     </div>
   );
 }
