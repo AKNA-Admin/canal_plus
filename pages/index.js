@@ -96,7 +96,7 @@ export default function FormulaireVente() {
       <img 
         src="https://res.cloudinary.com/zpy0qbjp/image/upload/v1785704386/Picture1_ekbv8d.png"
         alt="Logo Canal+ PDV" 
-        style={{ maxWidth: '75%', height: 'auto', display: 'block', margin: '0 auto' }} 
+        style={{ maxWidth: '50%', height: 'auto', display: 'block', margin: '0 auto' }} 
    />
    </div>
       
@@ -121,7 +121,7 @@ export default function FormulaireVente() {
 
         <div style={{ marginBottom: '15px' }}>
           <label style={{ fontWeight: '600' }}>N° de Décodeur (14 chiffres) :</label>
-          <input type="text" maxLength="14" value={numDecodeur} onChange={(e) => setNumDecodeur(e.target.value)} required style={{ width: '100%', padding: '10px', marginTop: '5px', borderRadius: '4px', border: '1px solid #ccc' }} />
+          <input type="text" maxLength="14" value={numDecodeur} onChange={(e) => setNumDecodeur(e.target.value)} required style={{ width: '100%', padding: '15px', marginTop: '5px', borderRadius: '4px', border: '1px solid #ccc' }} />
         </div>
 
         {typeVente === 'Kit' && (
