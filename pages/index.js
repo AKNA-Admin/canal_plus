@@ -121,7 +121,7 @@ export default function FormulaireVente() {
 
         <div style={{ marginBottom: '15px' }}>
           <label style={{ fontWeight: '600' }}>N° de Décodeur (14 chiffres) :</label>
-          <input type="text" maxLength="14" value={numDecodeur} onChange={(e) => setNumDecodeur(e.target.value)} required style={{ width: '100%', padding: '10px', marginTop: '5px', borderRadius: '4px', border: '1px solid #ccc' }} />
+          <input type="text" maxLength="14" value={numDecodeur} onChange={(e) => setNumDecodeur(e.target.value)} required style={{ width: '75%', padding: '10px', marginTop: '5px', borderRadius: '4px', border: '1px solid #ccc' }} />
         </div>
 
         {typeVente === 'Kit' && (
