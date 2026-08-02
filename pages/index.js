@@ -96,7 +96,7 @@ export default function FormulaireVente() {
   <img 
     src="https://res.cloudinary.com/zpy0qbjp/image/upload/v1785704386/Picture1_ekbv8d.png"
     alt="Logo Canal+ PDV" 
-    style={{ maxWidth: '100px', height: 'auto', display: 'block', margin: '0 auto' }} 
+    style={{ maxWidth: '100%', height: 'auto', display: 'block', margin: '0 auto' }} 
    />
    </div>
       
