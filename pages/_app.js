@@ -8,8 +8,9 @@ export default function MyApp({ Component, pageProps }) {
   const liensNavigation = [
     { label: "📝 Nouvelle Opération (Ventes)", url: "/" },
     { label: "📊 Tableau de Bord (Stocks)", url: "/dashboard" },
-    { label: "💰 Versement en banque (Banque, Mobile money, Espèces, Autres)", url: "/recharge" },
-    { label: "🛡️ Validation des Recharges (Admin)", url: "/admin/validations" }
+    { label: "💰 Versement en banque", url: "/recharge" },
+    { label: "🛡️ Validation des Recharges ", url: "/admin/validations" },
+    { label: "Besoin d'assistance (Disponible de 08h à 16h)", url: "/" }
   ];
 
   return (
@@ -27,7 +28,7 @@ export default function MyApp({ Component, pageProps }) {
         position: 'relative',
         boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
       }}>
-        <div style={{ fontWeight: '800', fontSize: '18px', letterSpacing: '0.5px' }}>
+        <div style={{ fontWeight: '800', fontSize: 'auto', letterSpacing: '0.5px' }}>
           CANAL+
         </div>
 
@@ -41,14 +42,14 @@ export default function MyApp({ Component, pageProps }) {
             padding: '8px 16px', 
             borderRadius: '6px', 
             cursor: 'pointer', 
-            fontWeight: '700',
+            fontWeight: '600',
             fontSize: '14px',
             display: 'flex',
             alignItems: 'center',
             gap: '8px'
           }}
         >
-          {menuOuvert ? '❌ Fermer' : '☰ Menu Applications'}
+          {menuOuvert ? 'X' : '☰'}
         </button>
 
         {/* LE MENU DÉROULANT (DROPDOWN) */}
@@ -74,7 +75,7 @@ export default function MyApp({ Component, pageProps }) {
                     padding: '14px 18px', 
                     color: '#333', 
                     textDecoration: 'none', 
-                    fontWeight: '700', // Titres des liens en gras
+                    fontWeight: '600', // Titres des liens en gras
                     fontSize: '14px',
                     borderBottom: index === liensNavigation.length - 1 ? 'none' : '1px solid #f0f0f0',
                     transition: 'background-color 0.2s',
