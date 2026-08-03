@@ -10,7 +10,7 @@ export default function MyApp({ Component, pageProps }) {
     { label: "📊 Tableau de Bord (Stocks)", url: "/dashboard" },
     { label: "💰 Versement en banque", url: "/recharge" },
     { label: "🛡️ Validation des Recharges ", url: "/admin/validations" },
-    { label: "Besoin d'assistance (Disponible de 08h à 16h)", url: "/" }
+    { label: "☎️ Besoin d'assistance (Disponible de 08h à 16h)", url: "/0767700072" }
   ];
 
   return (
@@ -49,7 +49,7 @@ export default function MyApp({ Component, pageProps }) {
             gap: '8px'
           }}
         >
-          {menuOuvert ? 'X' : '☰'}
+          {menuOuvert ? '🔙' : '☰'}
         </button>
 
         {/* LE MENU DÉROULANT (DROPDOWN) */}
