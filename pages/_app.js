@@ -121,7 +121,9 @@ export default function MyApp({ Component, pageProps }) {
       <main style={{ padding: '10px' }}>
         <Component {...pageProps} />
       </main>
-        <Script src="https://cloudinary.com" strategy="lazyOnload" />
+        <Script
+        src="https://cloudinary.com"
+          strategy="lazyOnload" />
     </div>
   );
 }
