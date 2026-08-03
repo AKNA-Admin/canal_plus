@@ -1,3 +1,4 @@
+import Script from 'next/script';
 import { useState } from 'react';
 import Link from 'next/link';
 
@@ -120,6 +121,7 @@ export default function MyApp({ Component, pageProps }) {
       <main style={{ padding: '10px' }}>
         <Component {...pageProps} />
       </main>
+        <Script src="https://cloudinary.com" strategy="lazyOnload" />
     </div>
   );
 }
