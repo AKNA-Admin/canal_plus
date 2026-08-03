@@ -10,7 +10,7 @@ export default function MyApp({ Component, pageProps }) {
     { label: "📊 Tableau de Bord (Stocks)", url: "/dashboard" },
     { label: "💰 Versement en banque", url: "/recharge" },
     { label: "🛡️ Validation des Recharges", url: "/admin/validations" },
-    { label: "👥 Base Clients & Relance J-4", url: "/clients" }
+    { label: "👥 Relance", url: "/clients" }
 
   ];
 
