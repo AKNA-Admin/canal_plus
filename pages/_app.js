@@ -1,4 +1,4 @@
-import Script from 'next/script';
+import { Script } from 'next/script';
 import { useState } from 'react';
 import Link from 'next/link';
 
@@ -7,9 +7,9 @@ export default function MyApp({ Component, pageProps }) {
 
   // Liste propre des liens internes
   const liensNavigation = [
-    { label: "📝 Nouvelle Opération (Ventes)", url: "/" },
+    { label: "📝 Nouvelle Opération (Ventes)", url: "/pages/pdv/contrat" },
     { label: "📊 Tableau de Bord (Stocks)", url: "/dashboard" },
-    { label: "💰 Versement en banque", url: "/recharge" },
+    { label: "💰 Versement en banque", url: "/pages/pdv/versement" },
     { label: "🛡️ Validation des Recharges", url: "/admin/validations" },
     { label: "👥 Relance", url: "/clients" }
 
@@ -122,7 +122,7 @@ export default function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
       </main>
         <Script
-        src="https://cloudinary.com"
+        src=""
           strategy="lazyOnload" />
     </div>
   );
