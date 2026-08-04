@@ -1,4 +1,3 @@
-import { Script } from 'next/script';
 import { useState } from 'react';
 import Link from 'next/link';
 
@@ -111,7 +110,7 @@ export default function MyApp({ Component, pageProps }) {
               onMouseEnter={(e) => e.target.style.backgroundColor = '#ffebeb'}
               onMouseLeave={(e) => e.target.style.backgroundColor = '#fff5f5'}
             >
-              ☎️ Besoin d'assistance (08h à 16h)
+              ☎️ Besoin d'assistance (Ouvert de 08h à 16h)
             </a>
           </div>
         )}
@@ -121,9 +120,6 @@ export default function MyApp({ Component, pageProps }) {
       <main style={{ padding: '10px' }}>
         <Component {...pageProps} />
       </main>
-        <Script
-        src=""
-          strategy="lazyOnload" />
     </div>
   );
 }
