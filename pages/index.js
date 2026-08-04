@@ -118,9 +118,9 @@ export default function FormulaireVente() {
       
       <div style={{ textAlign: 'center', marginBottom: '15px' }}>
         <img 
-          src="https://res.cloudinary.com/zpy0qbjp/image/upload/v1785704386/Picture1_ekbv8d.png" 
+          src="https://res.cloudinary.com/zpy0qbjp/image/upload/v1785828636/logo_my_app_pdv_canalplus.png" 
           alt="Logo Canal+ PDV" 
-          style={{ width: '120px', height: 'auto', display: 'block', margin: '0 auto' }} 
+          style={{ width: '100%', height: 'auto', display: 'block', margin: '0 auto' }} 
         />
       </div>
 
