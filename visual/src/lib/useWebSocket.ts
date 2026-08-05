@@ -1,22 +1,19 @@
-import axios from 'axios';
+import { useEffect } from 'react';
 
-const rustApi = axios.create({
-  baseURL: import.meta.env.VITE_RUST_API,
-});
-
-const javaApi = axios.create({
-  baseURL: import.meta.env.VITE_JAVA_API,
-});
-
-// Intercepteur: Ajoute le token JWT à chaque requête
-[rustApi, javaApi].forEach(api => {
-  api.interceptors.request.use((config) => {
+export const useWebSocket = (onNewVente: (data: any) => void) => {
+  useEffect(() => {
     const token = localStorage.getItem('token');
-    if (token) {
-      config.headers.Authorization = `Bearer ${token}`;
-    }
-    return config;
-  });
-});
+    const ws = new WebSocket(
+      `${import.meta.env.VITE_RUST_API.replace('https', 'wss')}/ws`,
+      [token] // on passe le token dans le protocole
+    );
 
-export { rustApi, javaApi };
+    ws.onmessage = (event) => {
+      const data = JSON.parse(event.data);
+      if (data.type === 'NEW_VENTE') {
+        onNewVente(data); // Affiche toast notif
+      }
+    };
+    return () => ws.close();
+  }, []);
+}
