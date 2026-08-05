@@ -1,0 +1,28 @@
+import { javaApi } from '@/lib/api';
+
+const AdminDashboard = () => {
+  const [ops, setOps] = useState([]);
+
+  // 1. Lister les ventes en attente depuis JAVA
+  useEffect(() => {
+    javaApi.get('/api/admin/operations').then(res => setOps(res.data));
+  }, []);
+
+  // 2. Valider une opération depuis JAVA
+  const valider = async (id) => {
+    await javaApi.post(`/api/admin/operations/${id}/valider`);
+    setOps(ops.filter(op => op.id!== id)); // Retire de la liste
+    alert("Opération validée");
+  }
+
+  return (
+    <div>
+      {ops.map(op => (
+        <div key={op.id}>
+          Vente {op.id} - {op.nom_client}
+          <button onClick={() => valider(op.id)}>Valider</button>
+        </div>
+      ))}
+    </div>
+  )
+}
