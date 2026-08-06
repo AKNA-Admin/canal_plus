@@ -1,0 +1,11 @@
+:root {
+  --canal-black: #000;
+  --canal-white: #FFFFFF;
+  --canal-yellow: #FFD600; /* Couleur bouton Canal */
+}
+
+button.primary {
+  background-color: var(--canal-yellow);
+  color: var(--canal-black);
+  font-weight: bold;
+}
