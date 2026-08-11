@@ -1,6 +1,3 @@
-mod routes;
-mod middleware;
-
 use axum::{Router, routing::{get, post}};
 use tower_http::cors::{CorsLayer, AllowOrigin, Any}; // Ajoute AllowOrigin
 use http::HeaderValue;
