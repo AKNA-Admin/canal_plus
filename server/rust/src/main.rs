@@ -1,5 +1,6 @@
 use axum::{Router, routing::{get, post}};
-use tower_http::cors::{CorsLayer, AllowOrigin, Any}; // Ajoute AllowOrigin
+use tower_http::cors::{CorsLayer, Any};
+use tower_http::cors::AllowOrigin;
 use http::HeaderValue;
 use std::sync::Arc;
 
